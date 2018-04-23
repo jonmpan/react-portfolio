@@ -10,20 +10,20 @@ const app = express();
 // Create server instance
 const server = http.createServer(app);
 
-// Set up promises with mongoose
-mongoose.Promise = global.Promise;
-// Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/portfolio-react"
-);
+// // Set up promises with mongoose
+// mongoose.Promise = global.Promise;
+// // Connect to the Mongo DB
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://localhost/portfolio-react"
+// );
 
-mongoose.connection.on('connected', () => {
-  console.log('Connected to Database');
-});
-// On Error
-mongoose.connection.on('error', (err) => {
-  console.log('Database error '+err);
-});
+// mongoose.connection.on('connected', () => {
+//   console.log('Connected to Database');
+// });
+// // On Error
+// mongoose.connection.on('error', (err) => {
+//   console.log('Database error '+err);
+// });
 
 // Set Static Folder
 app.use(express.static("client/build"));
