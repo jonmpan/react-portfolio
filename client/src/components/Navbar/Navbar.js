@@ -47,13 +47,13 @@ class Navbar extends Component {
 					<a href="#home">Home</a>
 				</li>
 				<li>
-					<a href="#search">Search</a>
+					<a href="#technologies">Technologies</a>
 				</li>
 				<li>
-					<a href="#popular">Popular Places</a>
+					<a href="#referrals">Referrals</a>
 				</li>
 				<li>
-					<a href="#gallery">Gallery</a>
+					<a href="#portfolio">Portfolio</a>
 				</li>
 				<li>
 					<a href="#contact">Contact</a>
