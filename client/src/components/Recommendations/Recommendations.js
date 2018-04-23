@@ -5,8 +5,8 @@ import "./Recommendations.css";
 class Recommendations extends Component {
 	render(){
 		return(
-			<section className="section white lighten-4 center">
-				<h3><span className="red-text">Totally Legit</span> Recommendations</h3>
+			<section id="referrals" className="section white center scrollspy">
+				<h4>Totally <strong className="indigo-text darken-4">Legit</strong> Referrals</h4>
 				<div className="container">
 					<div className="row">
 						<div className="col s12 m6 l4 recommendation-row-margin">

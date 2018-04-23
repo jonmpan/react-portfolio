@@ -5,9 +5,9 @@ class Details extends Component {
 
 	render(){
 		return(
-			<section className="section section-icons white lighten-4 center">
+			<section id="technologies" className="section section-icons white lighten-4 center scrollspy">
 				<div className="container">
-					<h4><span className="teal-text">MERN</span> Developer</h4>
+					<h4><strong className="indigo-text darken-4">MERN</strong> Developer</h4>
 					<div className="row">
 						<div className="col s12 m6 l3">
 							<div className="card-panel">

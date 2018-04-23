@@ -1,8 +1,8 @@
 const express = require("express");
 const http = require('http');
 const path = require('path');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+// const bodyParser = require('body-parser');
+// const mongoose = require('mongoose');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -29,7 +29,7 @@ const server = http.createServer(app);
 app.use(express.static("client/build"));
 
 // Body Parser Middleware
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 // Send every request to the React app
 // Define any API routes before this runs

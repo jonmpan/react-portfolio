@@ -6,10 +6,10 @@ const sideBarInit = ()=>{
 const sliderInit = ()=>{
 	const slider = document.querySelector('.slider');
 	M.Slider.init(slider, {
-		indicators: false,
+		indicators: true,
 		height: 500,
 		transition: 500,
-		interval: 6000
+		interval: 7000
 	});	
 }
 
@@ -18,11 +18,35 @@ const collapsibleInit = ()=>{
 	var instance = M.Collapsible.init(elem,{accordion:true});
 }
 
-
 $(document).ready(function(){
 	// $('.sidenav').sidenav();
 	sideBarInit();
 	sliderInit();
 	collapsibleInit();
 	$('#comment').characterCounter();
+	const ss = document.querySelectorAll('.scrollspy');
+	M.ScrollSpy.init(ss, {});
+	$('.slick-carousel').slick({
+		slidesToShow: 3,
+		prevArrow: '<i class="material-icons slick-prev-custom-prev">keyboard_arrow_left</i>',
+		nextArrow: '<i class="material-icons slick-prev-custom-next">keyboard_arrow_right</i>',
+		draggable: true,
+		// prevArrow: '<i class="material-icons">arrow-back</i>',
+		// nextArrow: '<i class="material-icons">arrow-forward</i>',
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		responsive: [{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		},{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1,
+			}
+		}],
+	});
 });
+

@@ -14,10 +14,10 @@ class Navbar extends Component {
 		return (
 		<div>
 			<div className="navbar-fixed">
-				<nav className="teal">
+				<nav className="indigo darken-4">
 					<div className="container">
 						<div className="nav-wrapper">
-							<a href="#" className="brand-logo">Travelville</a>
+							<a href="#" className="brand-logo">JP</a>
 							<a href="#" data-target="mobile-nav" className="sidenav-trigger">
 								<i className="material-icons">menu</i>
 							</a>
@@ -26,13 +26,13 @@ class Navbar extends Component {
 									<a href="#home">Home</a>
 								</li>
 								<li>
-									<a href="#search">Search</a>
+									<a href="#technologies">Technologies</a>
 								</li>
 								<li>
-									<a href="#popular">Popular Places</a>
+									<a href="#referrals">Referrals</a>
 								</li>
 								<li>
-									<a href="#gallery">Gallery</a>
+									<a href="#portfolio">Portfolio</a>
 								</li>
 								<li>
 									<a href="#contact">Contact</a>
