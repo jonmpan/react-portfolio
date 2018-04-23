@@ -1,0 +1,35 @@
+{
+  "name": "quizit",
+  "version": "1.0.0",
+  "description": "Berkeley Coding Camp Project 3 Crowd Trivia Game",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Binary-Squad/QuizIt.git"
+  },
+  "author": "Caryn McVey, Joe Faulstick, Jon Pan, & Thomas Cote",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Binary-Squad/QuizIt/issues"
+  },
+  "homepage": "https://github.com/Binary-Squad/QuizIt#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12",
+    "axios": "^0.16.2"
+  }
+}
