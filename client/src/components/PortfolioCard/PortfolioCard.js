@@ -13,7 +13,15 @@ class PortfolioCard extends Component{
 					</div>
 					<div className="card-content">
 						<a href={this.props.urlDemo} target="_blank"><h5 className="no-top-margin"><strong className="indigo-text darken-4" dangerouslySetInnerHTML={createMarkup(this.props.title)}></strong></h5></a>
-						<div dangerouslySetInnerHTML={createMarkup(this.props.description)}></div>
+						<div className="small-bottom-margin" dangerouslySetInnerHTML={createMarkup(this.props.description)}></div>
+						<div className="wrap-x-overflow row no-bottom-margin small-top-margin">
+						{this.props.details.map((detail,index)=>{
+							return(
+								<div key={index} className="portfolio-card-detail-button indigo lighten-2 white-text">{detail}</div>
+							)	
+						})}
+						<div className="clearFloat" />
+						</div>
 					</div>
 					<div className="card-action">
 						<a target="_blank" href={this.props.urlDemo} className="waves-effect waves-light btn small-margins btn-custom-portfolio indigo darken-4"><i className="material-icons left">play_arrow</i><strong>DEMO</strong></a>

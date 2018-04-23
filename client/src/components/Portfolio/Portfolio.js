@@ -18,6 +18,7 @@ class Portfolio extends Component {
 									description={portfolioObject.description}
 									urlDemo={portfolioObject.urlDemo}
 									urlCode={portfolioObject.urlCode}
+									details={portfolioObject.details}
 									key={index}
 								/>
 							)

@@ -27,7 +27,7 @@ class AdditionalDetails extends Component {
 											<tr>
 												<td>CSS Animation/Keyframes</td>
 											</tr>
-											<tr>										
+											<tr>
 												<td>Bootstrap 3/4</td>
 											</tr>
 											<tr>
@@ -44,6 +44,9 @@ class AdditionalDetails extends Component {
 											</tr>
 											<tr>
 												<td>Animate.css</td>
+											</tr>
+											<tr>
+												<td>Ace text editor</td>
 											</tr>
 										</tbody>
 									</table>
@@ -66,7 +69,7 @@ class AdditionalDetails extends Component {
 											<tr>
 												<td>Axios</td>
 											</tr>
-											<tr>										
+											<tr>
 												<td>Mocha/Chai</td>
 											</tr>
 											<tr>
@@ -81,7 +84,7 @@ class AdditionalDetails extends Component {
 											<tr>
 												<td>Socket.io</td>
 											</tr>
-											<tr>										
+											<tr>
 												<td>MVC Structure</td>
 											</tr>
 										</tbody>
@@ -105,16 +108,16 @@ class AdditionalDetails extends Component {
 											<tr>
 												<td>Trello</td>
 											</tr>
-											<tr>										
+											<tr>
 												<td>Agile Development</td>
 											</tr>
-											<tr>										
+											<tr>
 												<td>Adobe Photoshop</td>
 											</tr>
-											<tr>										
+											<tr>
 												<td>Adobe Illustrator</td>
 											</tr>
-											<tr>										
+											<tr>
 												<td>Adobe After Effects</td>
 											</tr>
 											<tr>

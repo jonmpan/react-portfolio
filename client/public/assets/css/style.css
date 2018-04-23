@@ -22,12 +22,20 @@
 	margin: 3px;
 }
 
-.small-right-margin{
-	margin-right: 5px !important;
+.small-top-margin{
+	margin-top: 5px !important;
 }
 
 .small-bottom-margin{
 	margin-bottom: 5px !important;
+}
+
+.small-right-margin{
+	margin-right: 5px !important;
+}
+
+.small-left-margin{
+	margin-left: 5px !important;
 }
 
 .no-padding{
@@ -50,6 +58,14 @@
 	padding-right: 0px !important;
 }
 
+.clearFloat{
+	clear: both;
+}
+
 *{
 	outline: none;
+}
+
+::-webkit-scrollbar { 
+	display: none; 
 }
