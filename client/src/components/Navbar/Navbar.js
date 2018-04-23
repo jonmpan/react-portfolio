@@ -14,7 +14,7 @@ class Navbar extends Component {
 		return (
 		<div>
 			<div className="navbar-fixed">
-				<nav className="indigo darken-4">
+				<nav className="black darken-4">
 					<div className="container">
 						<div className="nav-wrapper">
 							<a href="#home" className="brand-logo">JP</a>

@@ -8,7 +8,7 @@ class Portfolio extends Component {
 		return(
 			<section id="portfolio" className="section section-popular indigo lighten-5 scrollspy">
 				<div className="container">
-					<h4 className="center">My Recent <strong className="indigo-text darken-4">Portfolio</strong> Pieces!</h4>
+					<h4 className="center">My Recent <strong className="indigo-text">Portfolio</strong> Pieces!</h4>
 					<h5 className="center">Click on arrows, drag, or swipe!</h5>
 					<div className="slick-carousel">
 						{portfolioObjects.map((portfolioObject,index)=>{

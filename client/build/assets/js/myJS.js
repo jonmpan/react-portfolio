@@ -31,8 +31,6 @@ $(document).ready(function(){
 		prevArrow: '<i class="material-icons slick-prev-custom-prev">keyboard_arrow_left</i>',
 		nextArrow: '<i class="material-icons slick-prev-custom-next">keyboard_arrow_right</i>',
 		draggable: true,
-		// prevArrow: '<i class="material-icons">arrow-back</i>',
-		// nextArrow: '<i class="material-icons">arrow-forward</i>',
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 7000,

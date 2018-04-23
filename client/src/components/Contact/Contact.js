@@ -51,7 +51,7 @@ class Contact extends Component{
 							</div>
 						</div>
 						<div className="col s12 m6">
-							<div className="card-panel indigo darken-4 white-text center">
+							<div className="card-panel black darken-4 white-text center">
 								<i className="material-icons large">email</i>
 								<h5>Or you can email me directly at:</h5>
 								<h6>jonmpan@gmail.com</h6>

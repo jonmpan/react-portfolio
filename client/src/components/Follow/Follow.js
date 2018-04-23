@@ -4,7 +4,7 @@ import "./Follow.css";
 class Follow extends Component {
 	render(){
 		return(
-			<section className="section section-follow indigo darken-4 white-text center">
+			<section className="section section-follow black darken-4 white-text center">
 				<div className="container">
 					<div className="row">
 						<div className="col s12">
