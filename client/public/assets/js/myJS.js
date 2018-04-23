@@ -35,7 +35,7 @@ $(document).ready(function(){
 		// nextArrow: '<i class="material-icons">arrow-forward</i>',
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 7000,
 		responsive: [{
 			breakpoint: 992,
 			settings: {
@@ -49,4 +49,3 @@ $(document).ready(function(){
 		}],
 	});
 });
-

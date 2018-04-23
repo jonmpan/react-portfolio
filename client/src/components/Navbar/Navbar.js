@@ -17,7 +17,7 @@ class Navbar extends Component {
 				<nav className="indigo darken-4">
 					<div className="container">
 						<div className="nav-wrapper">
-							<a href="#" className="brand-logo">JP</a>
+							<a href="#home" className="brand-logo">JP</a>
 							<a href="#" data-target="mobile-nav" className="sidenav-trigger">
 								<i className="material-icons">menu</i>
 							</a>
