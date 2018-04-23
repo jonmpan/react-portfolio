@@ -1,7 +1,7 @@
 {
   "name": "quizit",
   "version": "1.0.0",
-  "description": "Berkeley Coding Camp Project 3 Crowd Trivia Game",
+  "description": "Jonathan Pan Portfolio Site",
   "main": "index.js",
   "scripts": {
     "server": "node server.js",
@@ -16,12 +16,12 @@
     "type": "git",
     "url": "git+https://github.com/Binary-Squad/QuizIt.git"
   },
-  "author": "Caryn McVey, Joe Faulstick, Jon Pan, & Thomas Cote",
+  "author": "Jonathan Pan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Binary-Squad/QuizIt/issues"
+    "url": "https://github.com/jonmpan/new-portfolio/issues"
   },
-  "homepage": "https://github.com/Binary-Squad/QuizIt#readme",
+  "homepage": "https://github.com/jonmpan/new-portfolio",
   "devDependencies": {
     "concurrently": "^3.5.0",
     "nodemon": "^1.11.0"
