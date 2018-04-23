@@ -8,7 +8,7 @@ class AdditionalDetails extends Component {
 			<h4>Additional <strong className="indigo-text darken-4">Technologies</strong></h4>
 			<div className="container">
 				<div className="row">
-					<div className="col s10 offset-s1 m8 offset-m2">
+					<div className="col s12 m8 offset-m2">
 						<ul className="collapsible">
 							<li>
 								<div className="collapsible-header"><i className="material-icons">computer</i>Front-End Technologies</div>
