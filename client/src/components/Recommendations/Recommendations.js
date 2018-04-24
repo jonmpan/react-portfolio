@@ -9,18 +9,7 @@ class Recommendations extends Component {
 				<h4>Totally <strong className="indigo-text darken-4">Legit</strong> Referrals</h4>
 				<div className="container">
 					<div className="row">
-						<div className="col s12 m6 l4 recommendation-row-margin">
-							<div className="row no-margin">
-								<div className="col s10 offset-s1 m8 offset-m2 l10 offset-l1">
-									<img className="circle responsive-img" src="/assets/img/jaysonphillips.jpg" alt="placeholder"/>
-								</div>
-							</div>
-							<div className="col s12 m10 offset-m1 l12">
-								<blockquote className="no-margin left-align">Jon is an ok guy, I guess. He built this site with react and whatever else he decided to use so there&apos;s that. I taught him everything he knows, so you should be paying me to build your site, not this guy.
-								<cite>Jayson <strong>BestTeacher</strong> Phillips</cite>
-								</blockquote>
-							</div>
-						</div>
+						
 						<div className="col s12 m6 l4 recommendation-row-margin">
 							<div className="row no-margin">
 								<div className="col s10 offset-s1 m8 offset-m2 l10 offset-l1">
@@ -33,6 +22,20 @@ class Recommendations extends Component {
 								</blockquote>
 							</div>
 						</div>
+						
+						<div className="col s12 m6 l4 recommendation-row-margin">
+							<div className="row no-margin">
+								<div className="col s10 offset-s1 m8 offset-m2 l10 offset-l1">
+									<img className="circle responsive-img" src="/assets/img/jaysonphillips.jpg" alt="placeholder"/>
+								</div>
+							</div>
+							<div className="col s12 m10 offset-m1 l12">
+								<blockquote className="no-margin left-align">Jon is an ok guy, I guess. He built this site with react and whatever else he decided to use so there&apos;s that. I taught him everything he knows, so you should be paying me to build your site, not this guy.
+								<cite>Jayson <strong>BestTeacher</strong> Phillips</cite>
+								</blockquote>
+							</div>
+						</div>
+
 						<div className="col s12 m6 l4 recommendation-row-margin">
 							<div className="row no-margin">
 								<div className="col s10 offset-s1 m8 offset-m2 l10 offset-l1">

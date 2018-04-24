@@ -2,6 +2,31 @@ import React, {Component} from "react";
 import "./Contact.css";
 
 class Contact extends Component{
+
+	state = {
+		comment:""
+	}
+
+	handleInputChange = event => {
+		const { name, value } = event.target;
+		if(this.state.comment.length < 500){
+			this.setState({
+				[name]: value
+			},()=>{
+				if(this.state.comment.length > 500){
+					this.setState({
+						[name]: value.substring(0,499)
+					})
+				}
+			});
+		}
+		else{
+			this.setState({
+				[name]:value.substring(0,499)
+			})
+		}
+	};
+
 	render(){
 		return(
 			<section id="contact" className="section section-contact scrollspy">
@@ -15,7 +40,7 @@ class Contact extends Component{
 									</div>
 								</div>
 								<div className="row no-margin">
-									<form action="https://formspree.io/jonmpan@gmail.com"
+									<form action="https://formspree.io/jonmpan@jonmpan.com"
 									method="POST" className="col s12 no-padding">
 										<div className="row no-margin">
 											<div className="input-field col s12">
@@ -34,7 +59,15 @@ class Contact extends Component{
 										<div className="row no-margin">
 											<div className="input-field col s12">
 												<i className="material-icons prefix">comment</i>
-												<textarea id="comment" type="email" className="materialize-textarea" name="comment" data-length="200"></textarea>
+												<textarea 
+													id="comment" 
+													type="text" 
+													className="materialize-textarea validate" 
+													name="comment" 
+													data-length="500"
+													onChange={this.handleInputChange}
+													value={this.state.comment}
+												></textarea>
 												<label htmlFor="comment">Comment</label>
 											</div>
 										</div>
@@ -54,7 +87,7 @@ class Contact extends Component{
 							<div className="card-panel black darken-4 white-text center">
 								<i className="material-icons large">email</i>
 								<h5>Or you can email me directly at:</h5>
-								<h6>jonmpan@gmail.com</h6>
+								<h6>jonmpan@jonmpan.com</h6>
 							</div>
 						</div>
 						
@@ -66,8 +99,3 @@ class Contact extends Component{
 }
 
 export default Contact;
-
-									// <input type="text" name="name" />
-									// <input type="email" name="_replyto" />
-									// <input type="text" name="comment" />
-									// <input type="submit" value="Send" />

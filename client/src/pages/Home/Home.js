@@ -7,6 +7,7 @@ import AdditionalDetails from "../../components/AdditionalDetails";
 import Recommendations from "../../components/Recommendations";
 import Follow from "../../components/Follow";
 import Contact from "../../components/Contact";
+import AboutMe from "../../components/AboutMe";
 
 class Home extends Component {
 	state = {
@@ -18,6 +19,7 @@ class Home extends Component {
 			<div>
 				<Slider />
 				<Pushdown />
+				<AboutMe />
 				<Details />
 				<AdditionalDetails />
 				<Recommendations />
