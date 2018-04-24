@@ -2,6 +2,22 @@ import React, {Component} from "react";
 import "./AboutMe.css";
 
 class AboutMe extends Component{
+
+	state={
+		espurr:false,
+		jon:false
+	}
+
+	handleClick=(event)=>{
+		const {name} = event.target;
+		if(this.state[name]){
+			this.setState({[name]:false})	
+		}
+		if(!this.state[name]){
+			this.setState({[name]:true})
+		}
+	}
+
 	render(){
 		return(
 			<section className="section indigo lighten-5 center">
@@ -9,11 +25,11 @@ class AboutMe extends Component{
 					<div className="card-panel white z-depth-1 about-me-top-margin">
 						<div className="row no-margin">
 							<div className="col s12 m6 l3">
-								<img src="/assets/img/jonathanpan.jpg" alt="" className="circle responsive-img" />
+								<img src="/assets/img/jonathanpan.jpg" alt="" className={this.state.jon?"circle responsive-img animated infinite rotate360":"circle responsive-img"} name="jon" onClick={this.handleClick} />
 							</div>
 							<div className="col s12 m6 l6 left-align">
 								<h4 className="no-margin">About <strong className="indigo-text">Me</strong></h4>
-								<p className="black-text">
+								<p className="">
 									Hi! I&apos;m Jonathan Pan. I am a full stack developer currently living in San Jose, CA.
 								</p>
 								<p>
@@ -27,7 +43,7 @@ class AboutMe extends Component{
 								</p>
 							</div>
 							<div className="col l3 hide-on-med-only hide-on-small-only">
-								<img src="/assets/img/espurr.jpg" alt="" className="circle responsive-img" />
+								<img src="/assets/img/espurr.jpg" alt="" className={this.state.espurr?"circle responsive-img animated infinite rotate360":"circle responsive-img"} name="espurr" onClick={this.handleClick} />
 							</div>
 						</div>
 					</div>
