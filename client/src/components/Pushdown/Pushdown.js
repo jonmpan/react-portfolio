@@ -4,7 +4,7 @@ import "./Pushdown.css";
 class Pushdown extends Component {
 	render(){
 		return(
-			<div className="pushDown" />
+			<div className="pushDown indigo lighten-5" />
 		)
 	}
 }
