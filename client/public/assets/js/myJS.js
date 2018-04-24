@@ -33,7 +33,7 @@ $(document).ready(function(){
 		draggable: true,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 7000,
+		autoplaySpeed: 6000,
 		responsive: [{
 			breakpoint: 992,
 			settings: {

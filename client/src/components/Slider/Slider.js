@@ -32,14 +32,13 @@ class Slider extends Component {
 						<img src="/assets/img/background3-compressed.jpg" alt="backgound3" />
 						<div className="caption right-align">
 							<h3>Hire Me Full-Time! (Please)</h3>
-							<h5 className="light grey-text text-lighten-5 hide-on-small-only">I do freelance work as well. Since I&apos;m currently funemployed, I am definitely looking for a full-time job.</h5>
+							<h5 className="light grey-text text-lighten-5 hide-on-small-only">I do freelance work as well. Since I&apos;m currently funemployed, I am looking for a full-time job.</h5>
 						</div>
 					</li>
 					<li>
 						<img src="/assets/img/domo5.jpg" alt="MERNster coder" />
 						<div className="caption right-align">
 							<h3>The <strong><span className="red-text darken-text-4">MERNster</span></strong> Coder!</h3>
-							<h5 className="light grey-text text-lighten-5 hide-on-small-only"><strong>Do you even flexbox?!? --Joe Faulstick</strong></h5>
 						</div>
 					</li>
 				</ul>
@@ -47,5 +46,7 @@ class Slider extends Component {
 		)
 	}
 }
+
+// <h5 className="light grey-text text-lighten-5 hide-on-small-only"><strong>Do you even flexbox?!? --Joe Faulstick</strong></h5>
 
 export default Slider;

@@ -33,13 +33,13 @@ class AboutMe extends Component{
 									Hi! I&apos;m Jonathan Pan. I am a full stack developer currently living in San Jose, CA.
 								</p>
 								<p>
-									I enjoy coding for both the front end and the back end. I particularly enjoy the sense of pride and accomplishment when combining everything to complete a project.
+									I enjoy coding for both the front end and the back end. In particular, I enjoy the sense of pride and accomplishment when combining everything into a complete project.
 								</p>
 								<p className="">
 									I am excited to finally pursue my passion for computers, web-development, and coding.
 								</p>
 								<p className="hide-on-med-only hide-on-small-only">
-									Outside of coding, I am a pretty plain and normal individual. I like my cats, playing video games, sleeping, and just living a simple life.
+									Outside of coding, I am a pretty plain and normal individual. I like my cats, playing video games, sleeping, and just living a simple life. (P.S. Don&apos;t click on my picture or my cat&apos;s picture!)
 								</p>
 							</div>
 							<div className="col l3 hide-on-med-only hide-on-small-only">
