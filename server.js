@@ -1,3 +1,4 @@
+var sslRedirect = require('heroku-ssl-redirect');
 const express = require("express");
 const http = require('http');
 const path = require('path');
@@ -24,6 +25,9 @@ const server = http.createServer(app);
 // mongoose.connection.on('error', (err) => {
 //   console.log('Database error '+err);
 // });
+
+// SSL Redirect
+app.use(sslRedirect());
 
 // Set Static Folder
 app.use(express.static("client/build"));
