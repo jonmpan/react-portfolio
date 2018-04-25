@@ -32,8 +32,8 @@ $(document).ready(function(){
 		nextArrow: '<i class="material-icons slick-prev-custom-next">keyboard_arrow_right</i>',
 		draggable: true,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 6000,
+		// autoplay: true,
+		// autoplaySpeed: 6000,
 		responsive: [{
 			breakpoint: 992,
 			settings: {
