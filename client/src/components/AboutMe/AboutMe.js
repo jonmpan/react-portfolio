@@ -39,7 +39,7 @@ class AboutMe extends Component{
 									I am excited to finally pursue my passion for computers, web-development, and coding.
 								</p>
 								<p className="hide-on-med-only hide-on-small-only">
-									Outside of coding, I am a pretty plain and normal individual. I like my pets, playing video games, sleeping, and just living a simple life. (P.S. Don&apos;t click on my picture or my cat&apos;s picture!)
+									Outside of coding, I am a pretty plain and normal individual. I like my pets, playing video games, sleeping, and just living a simple life.
 								</p>
 								<p className="hide-on-med-only hide-on-small-only">
 									(P.S. Don&apos;t click on my picture or my cat&apos;s picture!)
