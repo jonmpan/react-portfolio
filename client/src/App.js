@@ -5,13 +5,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 class App extends Component {
-  state = {
-  }
-
-  componentDidMount(){
-    // $('.sidenav').sidenav();
-  }
-
   render() {
 
     return (

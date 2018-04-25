@@ -69,3 +69,7 @@
 ::-webkit-scrollbar { 
 	display: none; 
 }
+
+blockquote{
+	border: none !important;
+}
