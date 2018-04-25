@@ -41,6 +41,9 @@ class AboutMe extends Component{
 								<p className="hide-on-med-only hide-on-small-only">
 									Outside of coding, I am a pretty plain and normal individual. I like my cats, playing video games, sleeping, and just living a simple life. (P.S. Don&apos;t click on my picture or my cat&apos;s picture!)
 								</p>
+								<p className="hide-on-med-only hide-on-small-only">
+									(P.S. Don&apos;t click on my picture or my cat&apos;s picture!)
+								</p>
 							</div>
 							<div className="col l3 hide-on-med-only hide-on-small-only">
 								<img src="/assets/img/espurr.jpg" alt="" className={this.state.espurr?"circle responsive-img animated infinite rotate360":"circle responsive-img"} name="espurr" onClick={this.handleClick} />
