@@ -26,7 +26,7 @@ const portfolioObjects = [
 	{
 		img:"/assets/img/p-capi.png",
 		title:"cAPI-PASTE",
-		description:"cAPI-Paste was my first project. Made entirely with static HTML, this site demonstrates some common use cases for some API&apos;s.",
+		description:"cAPI-PASTE was my first project. Made entirely with static HTML, this site demonstrates some common use cases for some API&apos;s.",
 		urlDemo:"https://first-project-tom-jon-suneetha.github.io/cAPI-PASTE/",
 		urlCode:"https://github.com/First-Project-Tom-Jon-Suneetha/cAPI-PASTE",
 		details:["Bootstrap","AceText","Jquery","AJAX","GoogleAPI","JQuery","Giphy","YoutubeAPI","Github Pages","Animation"],
