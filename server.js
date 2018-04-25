@@ -1,4 +1,4 @@
-// var sslRedirect = require('heroku-ssl-redirect');
+var sslRedirect = require('heroku-ssl-redirect');
 const express = require("express");
 const http = require('http');
 const path = require('path');
@@ -27,7 +27,7 @@ const server = http.createServer(app);
 // });
 
 // SSL Redirect
-// app.use(sslRedirect());
+app.use(sslRedirect());
 
 // Set Static Folder
 app.use(express.static("client/build"));
