@@ -35,7 +35,7 @@ class Details extends Component {
 							<div className="card-panel">
 								<img className="responsive-img" src="/assets/img/react.png" alt="react" />
 								<ul className="collection">
-									<li className="collection-item">Redux (WIP)</li>
+									<li className="collection-item">Redux</li>
 									<li className="collection-item">Mobile Styling</li>
 									<li className="collection-item">Custom Styling</li>
 									<li className="collection-item">State Management</li>

@@ -6,7 +6,7 @@ import portfolioObjects from "../../utils/portfolioObjects.js";
 class Portfolio extends Component {
 	render(){
 		return(
-			<section id="portfolio" className="section section-popular indigo lighten-5 scrollspy">
+			<section id="portfolio" className="section indigo lighten-5 scrollspy">
 				<div className="container">
 					<h4 className="center">My Recent <strong className="indigo-text">Portfolio</strong> Pieces!</h4>
 					<h5 className="center">Click on arrows, drag, or swipe!</h5>

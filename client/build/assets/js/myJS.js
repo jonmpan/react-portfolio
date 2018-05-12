@@ -20,6 +20,7 @@ const collapsibleInit = ()=>{
 
 $(document).ready(function(){
 	// $('.sidenav').sidenav();
+	$('.parallax').parallax();
 	sideBarInit();
 	sliderInit();
 	collapsibleInit();

@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import Slider from "../../components/Slider";
 import Details from "../../components/Details";
+// import ParallaxDetails from "../../components/ParallaxDetails";
+// <ParallaxDetails />
 import Pushdown from "../../components/Pushdown";
 import Portfolio from "../../components/Portfolio";
 import AdditionalDetails from "../../components/AdditionalDetails";
@@ -20,6 +22,7 @@ class Home extends Component {
 				<Slider />
 				<Pushdown />
 				<AboutMe />
+				
 				<Details />
 				<AdditionalDetails />
 				<Recommendations />

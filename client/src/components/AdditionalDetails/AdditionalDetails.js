@@ -15,39 +15,17 @@ class AdditionalDetails extends Component {
 								<div className="collapsible-body white left-align">
 									<table className="striped">
 										<tbody>
-											<tr>
-												<td>HTML5</td>
-											</tr>
-											<tr>
-												<td>HTML5 Canvas</td>
-											</tr>
-											<tr>
-												<td>CSS3</td>
-											</tr>
-											<tr>
-												<td>CSS Animation/Keyframes</td>
-											</tr>
-											<tr>
-												<td>Bootstrap 3/4</td>
-											</tr>
-											<tr>
-												<td>Materialize</td>
-											</tr>
-											<tr>
-												<td>Handlebars</td>
-											</tr>
-											<tr>
-												<td>JQuery</td>
-											</tr>
-											<tr>
-												<td>Javascript ES5/ES6</td>
-											</tr>
-											<tr>
-												<td>Animate.css</td>
-											</tr>
-											<tr>
-												<td>Ace text editor</td>
-											</tr>
+											<tr><td>HTML5</td></tr>
+											<tr><td>HTML5 Canvas</td></tr>
+											<tr><td>CSS3</td></tr>
+											<tr><td>CSS Animation/Keyframes</td></tr>
+											<tr><td>Bootstrap 3/4</td></tr>
+											<tr><td>Materialize</td></tr>
+											<tr><td>Handlebars</td></tr>
+											<tr><td>JQuery</td></tr>
+											<tr><td>Javascript ES5/ES6</td></tr>
+											<tr><td>Animate.css</td></tr>
+											<tr><td>Ace text editor</td></tr>
 										</tbody>
 									</table>
 								</div>
@@ -57,36 +35,16 @@ class AdditionalDetails extends Component {
 								<div className="collapsible-body white left-align">
 									<table className="striped">
 										<tbody>
-											<tr>
-												<td>Passport</td>
-											</tr>
-											<tr>
-												<td>CORS</td>
-											</tr>
-											<tr>
-												<td>Jsonwebtoken</td>
-											</tr>
-											<tr>
-												<td>Axios</td>
-											</tr>
-											<tr>
-												<td>Mocha/Chai</td>
-											</tr>
-											<tr>
-												<td>Nightmare</td>
-											</tr>
-											<tr>
-												<td>Bcrypt</td>
-											</tr>
-											<tr>
-												<td>Firebase</td>
-											</tr>
-											<tr>
-												<td>Socket.io</td>
-											</tr>
-											<tr>
-												<td>MVC Structure</td>
-											</tr>
+											<tr><td>Passport</td></tr>
+											<tr><td>CORS</td></tr>
+											<tr><td>Jsonwebtoken</td></tr>
+											<tr><td>Axios</td></tr>
+											<tr><td>Mocha/Chai</td></tr>
+											<tr><td>Nightmare</td></tr>
+											<tr><td>Bcrypt</td></tr>
+											<tr><td>Firebase</td></tr>
+											<tr><td>Socket.io</td></tr>
+											<tr><td>MVC Structure</td></tr>
 										</tbody>
 									</table>
 								</div>
@@ -96,33 +54,15 @@ class AdditionalDetails extends Component {
 								<div className="collapsible-body white left-align">
 									<table className="striped">
 										<tbody>
-											<tr>
-												<td>Github</td>
-											</tr>
-											<tr>
-												<td>Heroku</td>
-											</tr>
-											<tr>
-												<td>Godaddy</td>
-											</tr>
-											<tr>
-												<td>Trello</td>
-											</tr>
-											<tr>
-												<td>Agile Development</td>
-											</tr>
-											<tr>
-												<td>Adobe Photoshop</td>
-											</tr>
-											<tr>
-												<td>Adobe Illustrator</td>
-											</tr>
-											<tr>
-												<td>Adobe After Effects</td>
-											</tr>
-											<tr>
-												<td>Fighter Factory</td>
-											</tr>
+											<tr><td>Github</td></tr>
+											<tr><td>Heroku</td></tr>
+											<tr><td>Godaddy</td></tr>
+											<tr><td>Trello</td></tr>
+											<tr><td>Agile Development</td></tr>
+											<tr><td>Adobe Photoshop</td></tr>
+											<tr><td>Adobe Illustrator</td></tr>
+											<tr><td>Adobe After Effects</td></tr>
+											<tr><td>Fighter Factory</td></tr>
 										</tbody>
 									</table>
 								</div>

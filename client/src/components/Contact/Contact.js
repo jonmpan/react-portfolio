@@ -73,7 +73,7 @@ class Contact extends Component{
 										</div>
 										<div className="row no-margin">
 											<div className="col s12 right-align">
-												<button className="btn waves-effect waves-light indigo darken-4" type="submit" name="action">
+												<button className="btn waves-effect waves-light black" type="submit" name="action">
 													<strong>Submit</strong>
 													<i className="material-icons right">send</i>
 												</button>
