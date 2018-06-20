@@ -8,25 +8,25 @@ class Recommendations extends Component {
 	render(){
 		return(
 			<section id="referrals" className="section white center scrollspy">
-				<h4>Totally <strong className="indigo-text darken-4">Legit</strong> Referrals</h4>
+				<h4 className="revealThis">Totally <strong className="indigo-text darken-4">Legit</strong> Referrals</h4>
 				<div className="container">
-					<div className="row">
+					<div className="row revealThis">
 						
+						<div className="slick-carousel">
+							{recommendationObjects.map((recommendation,index)=>{
+								return(
+									<RecommendationCard
+										key={index}
+										img={recommendation.img}
+										recommendation={recommendation.recommendation}
+										firstName={recommendation.firstName}
+										nickName={recommendation.nickName}
+										lastName={recommendation.lastName}
+									/>
+								)
+							})}
+						</div>
 
-					<div className="slick-carousel">
-						{recommendationObjects.map((recommendation,index)=>{
-							return(
-								<RecommendationCard
-									key={index}
-									img={recommendation.img}
-									recommendation={recommendation.recommendation}
-									firstName={recommendation.firstName}
-									nickName={recommendation.nickName}
-									lastName={recommendation.lastName}
-								/>
-							)
-						})}
-					</div>
 					</div>
 				</div>
 			</section>
