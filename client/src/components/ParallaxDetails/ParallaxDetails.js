@@ -10,21 +10,21 @@ class ParallaxDetails extends Component {
 				<div className="section">
 					<div className="container">
 						<div className="row">
-							<h3 className="weight-100 center white-text huge-bottom-margin">SERVICES</h3>
+							<h3 className="revealThis weight-100 center white-text huge-bottom-margin">SERVICES</h3>
 							<br />
-							<div className="col s12 m6 l4 center">
+							<div className="revealThis col s12 m6 l4 center">
 								<i className="material-icons large white-text">desktop_windows</i>
 								<h5 className="white-text weight-100 large-margins">DESKTOP</h5>
 								<p className="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed risus ultrices, iaculis diam vel, rutrum massa. Donec odio urna, tristique eget mi luctus, consequat eleifend nisl. Nunc sed quam vulputate justo efficitur blandit sed nec mauris. Quisque gravida porttitor nunc, a ullamcorper odio gravida at.</p>
 								<br className="hide-on-large-only" />
 							</div>
-							<div className="col s12 m6 l4 center">
+							<div className="revealThis col s12 m6 l4 center">
 								<i className="material-icons large white-text">phone_iphone</i>
 								<h5 className="white-text weight-100 large-margins">MOBILE</h5>
 								<p className="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed risus ultrices, iaculis diam vel, rutrum massa. Donec odio urna, tristique eget mi luctus, consequat eleifend nisl. Nunc sed quam vulputate justo efficitur blandit sed nec mauris. Quisque gravida porttitor nunc, a ullamcorper odio gravida at.</p>
 								<br className="hide-on-large-only" />
 							</div>
-							<div className="col s12 m6 l4 center">
+							<div className="revealThis col s12 m6 l4 center">
 								<i className="material-icons large white-text">games</i>
 								<h5 className="white-text weight-100 large-margins">GAMES</h5>
 								<p className="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed risus ultrices, iaculis diam vel, rutrum massa. Donec odio urna, tristique eget mi luctus, consequat eleifend nisl. Nunc sed quam vulputate justo efficitur blandit sed nec mauris. Quisque gravida porttitor nunc, a ullamcorper odio gravida at.</p>

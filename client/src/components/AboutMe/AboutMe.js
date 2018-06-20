@@ -22,7 +22,7 @@ class AboutMe extends Component{
 		return(
 			<section className="section indigo lighten-5 center">
 				<div className="container">
-					<div className="card-panel white z-depth-1 about-me-top-margin">
+					<div className="revealThis card-panel white z-depth-1 about-me-top-margin">
 						<div className="row no-margin">
 							<div className="col s12 m6 l3">
 								<img src="/assets/img/jonathanpan.jpg" alt="" className={this.state.jon?"circle responsive-img animated infinite rotate360":"circle responsive-img"} name="jon" onClick={this.handleClick} />
