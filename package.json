@@ -1,5 +1,5 @@
 {
-  "name": "quizit",
+  "name": "Portfolio",
   "version": "1.0.0",
   "description": "Jonathan Pan Portfolio Site",
   "main": "index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Binary-Squad/QuizIt.git"
+    "url": "git+https://github.com/jonmpan/react-portfolio"
   },
   "author": "Jonathan Pan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jonmpan/new-portfolio/issues"
+    "url": "https://github.com/jonmpan/react-portfolio"
   },
-  "homepage": "https://github.com/jonmpan/new-portfolio",
+  "homepage": "https://www.jonmpan.com/",
   "devDependencies": {
     "concurrently": "^3.5.0",
     "nodemon": "^1.11.0"

@@ -5,9 +5,9 @@ class AdditionalDetails extends Component {
 	render(){
 		return(
 			<section className="section indigo lighten-5 center">
-			<h4>Additional <strong className="indigo-text darken-4">Technologies</strong></h4>
+			<h4 className="revealThis">Additional <strong className="indigo-text darken-4">Technologies</strong></h4>
 			<div className="container">
-				<div className="row">
+				<div className="row revealThis">
 					<div className="col s12 m8 offset-m2">
 						<ul className="collapsible">
 							<li>

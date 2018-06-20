@@ -7,8 +7,8 @@ class Details extends Component {
 		return(
 			<section id="technologies" className="section section-icons white lighten-4 center scrollspy">
 				<div className="container">
-					<h4><strong className="indigo-text darken-4">MERN</strong> Developer</h4>
-					<div className="row">
+					<h4 className="revealThis"><strong className="indigo-text darken-4">MERN</strong> Developer</h4>
+					<div className="row revealThis">
 						<div className="col s12 m6 l3">
 							<div className="card-panel">
 								<img className="responsive-img" src="/assets/img/mongodb.jpg" alt="mongodb" />
