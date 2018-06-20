@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Slider from "../../components/Slider";
 import Details from "../../components/Details";
-import ParallaxDetails from "../../components/ParallaxDetails";
 import Pushdown from "../../components/Pushdown";
 import Portfolio from "../../components/Portfolio";
 import AdditionalDetails from "../../components/AdditionalDetails";
@@ -9,7 +8,8 @@ import Recommendations from "../../components/Recommendations";
 import Follow from "../../components/Follow";
 import Contact from "../../components/Contact";
 import AboutMe from "../../components/AboutMe";
-import TestItems from "../../components/TestItems";
+// import TestItems from "../../components/TestItems";
+// import ParallaxDetails from "../../components/ParallaxDetails";
 
 class Home extends Component {
 	state = {
@@ -22,8 +22,8 @@ class Home extends Component {
 				<Slider />
 				<Pushdown />
 				<AboutMe />
-				<TestItems />
-				<ParallaxDetails />
+				{/*<TestItems />*/}
+				{/*<ParallaxDetails />*/}
 				<Details />
 				<AdditionalDetails />
 				<Recommendations />
