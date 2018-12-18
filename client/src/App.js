@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home/';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Navbar from './components/Navbar';
+// import Footer from './components/Footer';
 import Secret from './pages/Secret';
 
 class App extends Component {
