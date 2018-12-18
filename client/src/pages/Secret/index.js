@@ -29,8 +29,10 @@ class Secret extends Component {
       this.el.innerHTML = this.txt;
       var that = this;
       var delta = 200 - Math.random() * 100;
+      // var delta = 125;
       if (this.isDeleting) {
-        delta /= 2;
+        // delta /= 2;
+        delta = 80;
       }
       if (
         !this.isDeleting &&
@@ -40,15 +42,13 @@ class Secret extends Component {
         delta = this.period;
         this.isDeleting = true;
         setTimeout(function() {
-          console.log('pooping');
           that.tick();
         }, delta);
       } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 500;
+        delta = 600;
         setTimeout(function() {
-          console.log('shooping');
           that.tick();
         }, delta);
       } else if (
@@ -59,7 +59,6 @@ class Secret extends Component {
         callback();
       } else {
         setTimeout(function() {
-          console.log('looping');
           that.tick();
         }, delta);
       }
@@ -70,7 +69,7 @@ class Secret extends Component {
   componentWillMount() {}
 
   componentDidMount() {
-    new this.TxtType(["Hi, I'm Jon. What's your name?"], 1000, () => {
+    new this.TxtType(["Hi, I'm Jon.", "What's your name?"], 1000, () => {
       setTimeout(() => {
         this.setState({ showTextInput: true }, () => {
           console.log('show text input');
@@ -126,13 +125,23 @@ class Secret extends Component {
     } = this.state;
     return (
       <div className="secretContainer">
-        <span className="centerText">
+        <span className="centerText unselectable">
           <span
             className={
-              hideTypewriter ? 'typewriter animated fadeOut' : 'typewriter'
+              hideTypewriter
+                ? 'typewriter animated fadeOut unselectable'
+                : 'typewriter unselectable'
             }
           />
-          <span className={hideTypewriter ? 'cursorGoAway' : 'cursor'}>|</span>
+          <span
+            className={
+              hideTypewriter
+                ? 'cursorGoAway unselectable'
+                : 'cursor unselectable'
+            }
+          >
+            |
+          </span>
         </span>
 
         <div className="inputDiv">
