@@ -28,7 +28,7 @@ class Secret extends Component {
       }
       this.el.innerHTML = this.txt;
       var that = this;
-      var delta = 200 - Math.random() * 100;
+      var delta = 180 - Math.random() * 90;
       // var delta = 125;
       if (this.isDeleting) {
         // delta /= 2;
@@ -136,7 +136,7 @@ class Secret extends Component {
           <span
             className={
               hideTypewriter
-                ? 'cursorGoAway unselectable'
+                ? 'cursorGoAway animated fadeOut unselectable'
                 : 'cursor unselectable'
             }
           >
