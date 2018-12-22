@@ -3,11 +3,12 @@ import styles from './styles.css';
 
 class Secret extends Component {
   state = {
-    name: 'Poop',
+    name: 'Jacqueline Ka',
     disableForm: false,
     hideForm: false,
     showTypewriter: false,
     hideTypewriter: false,
+    splitBackground: false,
   };
 
   TxtType = function(toRotate, period, callback) {
@@ -28,7 +29,7 @@ class Secret extends Component {
       }
       this.el.innerHTML = this.txt;
       var that = this;
-      var delta = 180 - Math.random() * 90;
+      var delta = 120 - Math.random() * 90;
       // var delta = 125;
       if (this.isDeleting) {
         // delta /= 2;
@@ -69,7 +70,7 @@ class Secret extends Component {
   componentWillMount() {}
 
   componentDidMount() {
-    new this.TxtType(["Hi, I'm Jon.", "What's your name?"], 1000, () => {
+    new this.TxtType(["Hi, I'm Jon."], 500, () => {
       setTimeout(() => {
         this.setState({ showTextInput: true }, () => {
           console.log('show text input');
@@ -80,17 +81,9 @@ class Secret extends Component {
 
   step1 = () => {
     console.log('step 1');
-    new this.TxtType(
-      [
-        'Hello cutie :)',
-        'Thank you for coming!',
-        'Here is something I wrote for you',
-      ],
-      2000,
-      () => {
-        console.log('step1 done');
-      },
-    ).tick();
+    new this.TxtType(['Hello cutie :)'], 500, () => {
+      this.setState({ splitBackground: true });
+    }).tick();
   };
 
   handleChange = event => {
@@ -115,6 +108,14 @@ class Secret extends Component {
     });
   };
 
+  selectBears = () => {
+    console.log('selected bears');
+  };
+
+  selectElephants = () => {
+    console.log('selected elephants');
+  };
+
   render() {
     const {
       showTextInput,
@@ -122,43 +123,74 @@ class Secret extends Component {
       hideForm,
       showTypewriter,
       hideTypewriter,
+      splitBackground,
     } = this.state;
     return (
-      <div className="secretContainer">
-        <span className="centerText unselectable">
-          <span
-            className={
-              hideTypewriter
-                ? 'typewriter animated fadeOut unselectable'
-                : 'typewriter unselectable'
-            }
-          />
-          <span
-            className={
-              hideTypewriter
-                ? 'cursorGoAway animated fadeOut unselectable'
-                : 'cursor unselectable'
-            }
-          >
-            |
-          </span>
-        </span>
-
-        <div className="inputDiv">
-          {showTextInput ? (
-            <input
-              disabled={disableForm}
+      <div className="wrapper">
+        {splitBackground ? (
+          <div className="animated fadeIn">
+            <div
+              className="leftBackground"
+              onClick={() => {
+                this.selectBears();
+              }}
+            >
+              <div className="step2Select">Bears</div>
+              <video autoPlay muted loop className="leftVideo">
+                <source src="/assets/video/bear.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div
+              className="rightBackground"
+              onClick={() => {
+                this.selectElephants();
+              }}
+            >
+              <div className="step2Select">Elephants</div>
+              <video autoPlay muted loop className="rightVideo">
+                <source src="/assets/video/elephant.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        ) : (
+          <div className="fullBackground" />
+        )}
+        <div className="secretContainer">
+          <span className="centerText unselectable">
+            <span
               className={
-                hideForm
-                  ? 'inputStyle animated fadeOut'
-                  : 'inputStyle animated fadeIn'
+                hideTypewriter
+                  ? 'typewriter animated fadeOut unselectable'
+                  : 'typewriter unselectable'
               }
-              type="text"
-              name="name"
-              value={this.state.name}
-              onChange={this.handleChange}
             />
-          ) : null}
+            <span
+              className={
+                hideTypewriter
+                  ? 'cursorGoAway animated fadeOut unselectable'
+                  : 'cursor unselectable'
+              }
+            >
+              |
+            </span>
+          </span>
+
+          <div className={!hideForm ? 'inputDiv' : 'inputDiv unselectable'}>
+            {showTextInput ? (
+              <input
+                disabled={disableForm}
+                className={
+                  hideForm
+                    ? 'inputStyle animated fadeOut'
+                    : 'inputStyle animated fadeIn'
+                }
+                type="text"
+                name="name"
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+            ) : null}
+          </div>
         </div>
       </div>
     );
