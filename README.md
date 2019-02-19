@@ -2,7 +2,7 @@
 
 [Deployed Here](https://www.jonmpan.com)
 
-Welcome to the github repo for my portfolio. You can copy this repo and use it for yourself if you so incline. Built with create-react-app and some boilerplate server/express code. Although right now there isn't any backend functionality, this portfolio is set up to handle backend functionality. Styled with Materialize. Deployed on heroku.
+Welcome to the github repo for my portfolio. You can copy this repo and use it for yourself if you so incline. Built with create-react-app and some boilerplate server/express code. Although right now there isn't any backend functionality, this portfolio is set up to handle backend functionality. Styled with Materialize. Deployed on heroku. Testing.
 
 ![Image of Portfolio](readme/p-portfolio.png)
 
