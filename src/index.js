@@ -34,7 +34,7 @@ app.use(bodyParser.json());
 // api router
 app.use('/pokemon', pokemon({ config }));
 app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, './client/build/index.html'));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 app.server.listen(process.env.PORT || config.port, () => {
