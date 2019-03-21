@@ -6,17 +6,17 @@
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
     "devServer": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
-    "devReact": "cd react-ui && npm run start",
-    "build": "babel src -s -D -d server --presets es2015,stage-0 && cd react-ui && npm run build && cd ..",
+    "devReact": "cd client && npm run start",
+    "build": "babel src -s -D -d server --presets es2015,stage-0 && cd client && npm run build && cd ..",
     "server": "node server.js",
     "client": "node scripts/start-client.js",
     "start": "concurrently \"nodemon server.js\" \"npm run client\"",
     "buildServer": "babel src -s -D -d server --presets es2015,stage-0",
-    "buildReact": "cd react-ui && npm run build && cd ..",
+    "buildReact": "cd client && npm run build && cd ..",
     "startDev": "concurrently \"npm run devServer\" \"npm run devReact\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "npm i && cd react-ui && npm i && cd ..",
-    "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && cd .. && npm run build"
+    "installDeps": "npm i && cd client && npm i && cd ..",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && cd .. && npm run build"
   },
   "repository": {
     "type": "git",
