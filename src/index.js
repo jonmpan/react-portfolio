@@ -8,6 +8,7 @@ import middleware from './middleware';
 import config from './config.json';
 import path from 'path';
 import pokemon from './api/pokemon';
+import ambience from './api/ambience';
 import db from './models';
 
 import scrape from './utils/scrape';
@@ -33,6 +34,7 @@ app.use(bodyParser.json());
 
 // api router
 app.use('/pokemon', pokemon({ config }));
+app.use('/ambience', ambience({ config }));
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
