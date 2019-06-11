@@ -18,13 +18,13 @@ export default ({ config }) => {
         'Content-Range': `bytes ${start}-${end}/${size}`,
         'Accept-Ranges': 'bytes',
         'Content-Length': end - start + 1,
-        'Content-Type': 'video/mp4',
+        'Content-Type': 'audio/mp3',
       });
       fs.createReadStream(file, { start, end }).pipe(res);
     } else {
       res.writeHead(200, {
         'Content-Length': size,
-        'Content-Type': 'video/mp4',
+        'Content-Type': 'audio/mp3',
       });
       fs.createReadStream(file).pipe(res);
     }
