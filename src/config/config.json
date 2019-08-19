@@ -1,0 +1,38 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "",
+    "database": "bixbydex",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": 1,
+    "database": "test_nodejs",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "ssl": true,
+    "dialect": "postgres",
+    "connectionTimeout": 0,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000,
+      "acquire": 20000
+    },
+    "retry": {
+      "max": 3
+    },
+    "logging": false,
+    "dialectOptions": {
+      "requestTimeout": 0,
+      "ssl": {
+        "require": true
+      }
+    }
+  }
+}
