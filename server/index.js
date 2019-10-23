@@ -44,6 +44,10 @@ var _pokemon = require('./api/pokemon');
 
 var _pokemon2 = _interopRequireDefault(_pokemon);
 
+var _ambience = require('./api/ambience');
+
+var _ambience2 = _interopRequireDefault(_ambience);
+
 var _models = require('./models');
 
 var _models2 = _interopRequireDefault(_models);
@@ -74,8 +78,9 @@ app.use(_bodyParser2.default.json());
 
 // api router
 app.use('/pokemon', (0, _pokemon2.default)({ config: _config2.default }));
+app.use('/ambience', (0, _ambience2.default)({ config: _config2.default }));
 app.get('*', function (req, res) {
-  res.sendFile(_path2.default.join(__dirname, './client/build/index.html'));
+  res.sendFile(_path2.default.join(__dirname, '../client/build/index.html'));
 });
 
 app.server.listen(process.env.PORT || _config2.default.port, function () {
