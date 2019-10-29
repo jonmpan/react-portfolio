@@ -18,11 +18,9 @@ var _fs = require("fs");
 
 var _fs2 = _interopRequireDefault(_fs);
 
-var _awsConfig = require("../../aws-config.json");
-
-var _awsConfig2 = _interopRequireDefault(_awsConfig);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import awsConfig from "../../aws-config.json";
 
 exports.default = function (_ref) {
   var config = _ref.config;
@@ -30,25 +28,28 @@ exports.default = function (_ref) {
   var api = (0, _express.Router)();
   var AWS = require("aws-sdk");
 
-  AWS.config.accessKeyId = process.env.S3_KEY || _awsConfig2.default.accessKeyId;
-  AWS.config.secretAccessKey = process.env.S3_SECRET || _awsConfig2.default.secretAccessKey; // prettier-ignore
+  AWS.config.accessKeyId = process.env.S3_KEY;
+  AWS.config.secretAccessKey = process.env.S3_SECRET; // prettier-ignore
+  //   AWS.config.accessKeyId = process.env.S3_KEY || awsConfig.accessKeyId;
+  //   AWS.config.secretAccessKey = process.env.S3_SECRET || awsConfig.secretAccessKey; // prettier-ignore
   AWS.config.region = "us-west-2";
 
   var polly = new AWS.Polly();
 
   api.post("/", function () {
     var _ref2 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(req, res) {
-      var params, range;
+      var voice, params, range;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               console.log(req.body);
+              voice = req.body.voice ? req.body.voice.toLowerCase() : null;
               params = {
                 OutputFormat: "mp3",
                 Text: req.body.text,
                 TextType: "text",
-                VoiceId: voices[req.body.voice] || "Joanna"
+                VoiceId: voices[voice] || "Joanna"
               };
               range = req.headers.range;
 
@@ -62,7 +63,7 @@ exports.default = function (_ref) {
                 }
               });
 
-            case 4:
+            case 5:
             case "end":
               return _context.stop();
           }
@@ -79,65 +80,65 @@ exports.default = function (_ref) {
 };
 
 var voices = {
-  Aditi: "Aditi",
-  Amy: "Amy",
-  Astrid: "Astrid",
-  Bianca: "Bianca",
-  Brian: "Brian",
-  Camila: "Camila",
-  Carla: "Carla",
-  Carmen: "Carmen",
-  Celine: "Celine",
-  Chantal: "Chantal",
-  Conchita: "Conchita",
-  Cristiano: "Cristiano",
-  Dora: "Dora",
-  Emma: "Emma",
-  Enrique: "Enrique",
-  Ewa: "Ewa",
-  Filiz: "Filiz",
-  Geraint: "Geraint",
-  Giorgio: "Giorgio",
-  Gwyneth: "Gwyneth",
-  Hans: "Hans",
-  Ines: "Ines",
-  Ivy: "Ivy",
-  Jacek: "Jacek",
-  Jan: "Jan",
-  Joanna: "Joanna",
-  Joey: "Joey",
-  Justin: "Justin",
-  Karl: "Karl",
-  Kendra: "Kendra",
-  Kimberly: "Kimberly",
-  Lea: "Lea",
-  Liv: "Liv",
-  Lotte: "Lotte",
-  Lucia: "Lucia",
-  Lupe: "Lupe",
-  Mads: "Mads",
-  Maja: "Maja",
-  Marlene: "Marlene",
-  Mathieu: "Mathieu",
-  Matthew: "Matthew",
-  Maxim: "Maxim",
-  Mia: "Mia",
-  Miguel: "Miguel",
-  Mizuki: "Mizuki",
-  Naja: "Naja",
-  Nicole: "Nicole",
-  Penelope: "Penelope",
-  Raveena: "Raveena",
-  Ricardo: "Ricardo",
-  Ruben: "Ruben",
-  Russell: "Russell",
-  Salli: "Salli",
-  Seoyeon: "Seoyeon",
-  Takumi: "Takumi",
-  Tatyana: "Tatyana",
-  Vicki: "Vicki",
-  Vitoria: "Vitoria",
-  Zeina: "Zeina",
-  Zhiyu: "Zhiyu"
+  aditi: "Aditi",
+  amy: "Amy",
+  astrid: "Astrid",
+  bianca: "Bianca",
+  brian: "Brian",
+  camila: "Camila",
+  carla: "Carla",
+  carmen: "Carmen",
+  celine: "Celine",
+  chantal: "Chantal",
+  conchita: "Conchita",
+  cristiano: "Cristiano",
+  dora: "Dora",
+  emma: "Emma",
+  enrique: "Enrique",
+  ewa: "Ewa",
+  filiz: "Filiz",
+  geraint: "Geraint",
+  giorgio: "Giorgio",
+  gwyneth: "Gwyneth",
+  hans: "Hans",
+  ines: "Ines",
+  ivy: "Ivy",
+  jacek: "Jacek",
+  jan: "Jan",
+  joanna: "Joanna",
+  joey: "Joey",
+  justin: "Justin",
+  karl: "Karl",
+  kendra: "Kendra",
+  kimberly: "Kimberly",
+  lea: "Lea",
+  liv: "Liv",
+  lotte: "Lotte",
+  lucia: "Lucia",
+  lupe: "Lupe",
+  mads: "Mads",
+  maja: "Maja",
+  marlene: "Marlene",
+  mathieu: "Mathieu",
+  matthew: "Matthew",
+  maxim: "Maxim",
+  mia: "Mia",
+  miguel: "Miguel",
+  mizuki: "Mizuki",
+  naja: "Naja",
+  nicole: "Nicole",
+  penelope: "Penelope",
+  raveena: "Raveena",
+  ricardo: "Ricardo",
+  ruben: "Ruben",
+  russell: "Russell",
+  salli: "Salli",
+  seoyeon: "Seoyeon",
+  takumi: "Takumi",
+  tatyana: "Tatyana",
+  vicki: "Vicki",
+  vitoria: "Vitoria",
+  zeina: "Zeina",
+  zhiyu: "Zhiyu"
 };
 //# sourceMappingURL=polly.js.map
