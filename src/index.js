@@ -1,24 +1,25 @@
-import http from 'http';
-import express from 'express';
-import session from 'express-session';
-import cors from 'cors';
-import morgan from 'morgan';
-import bodyParser from 'body-parser';
-import middleware from './middleware';
-import config from './config.json';
-import path from 'path';
-import pokemon from './api/pokemon';
-import ambience from './api/ambience';
-import db from './models';
+import http from "http";
+import express from "express";
+import session from "express-session";
+import cors from "cors";
+import morgan from "morgan";
+import bodyParser from "body-parser";
+import middleware from "./middleware";
+import config from "./config.json";
+import path from "path";
+import pokemon from "./api/pokemon";
+import ambience from "./api/ambience";
+import polly from "./api/polly";
+import db from "./models";
 
-import scrape from './utils/scrape';
+import scrape from "./utils/scrape";
 // scrape();
 
 let app = express();
 app.server = http.createServer(app);
 
 // logger
-app.use(morgan('dev'));
+app.use(morgan("dev"));
 
 // 3rd party middleware
 app.use(
@@ -26,17 +27,18 @@ app.use(
     exposedHeaders: config.corsHeaders,
   }),
 );
-app.use(express.static('client/build'));
+app.use(express.static("client/build"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(middleware({ config, db }));
 app.use(bodyParser.json());
 
 // api router
-app.use('/pokemon', pokemon({ config }));
-app.use('/ambience', ambience({ config }));
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+app.use("/pokemon", pokemon({ config }));
+app.use("/ambience", ambience({ config }));
+app.use("/polly", polly({ config }));
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
 app.server.listen(process.env.PORT || config.port, () => {
