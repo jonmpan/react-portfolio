@@ -1,13 +1,15 @@
 import { Router } from "express";
 import fs, { createReadStream } from "fs";
-import awsConfig from "../../aws-config.json";
+// import awsConfig from "../../aws-config.json";
 
 export default ({ config }) => {
   let api = Router();
   var AWS = require("aws-sdk");
 
-  AWS.config.accessKeyId = process.env.S3_KEY || awsConfig.accessKeyId;
-  AWS.config.secretAccessKey = process.env.S3_SECRET || awsConfig.secretAccessKey; // prettier-ignore
+  AWS.config.accessKeyId = process.env.S3_KEY;
+  AWS.config.secretAccessKey = process.env.S3_SECRET; // prettier-ignore
+  //   AWS.config.accessKeyId = process.env.S3_KEY || awsConfig.accessKeyId;
+  //   AWS.config.secretAccessKey = process.env.S3_SECRET || awsConfig.secretAccessKey; // prettier-ignore
   AWS.config.region = "us-west-2";
 
   var polly = new AWS.Polly();
