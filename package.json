@@ -45,7 +45,7 @@
     "pg-hstore": "^2.3.2",
     "pokedex-promise-v2": "^3.1.1",
     "resource-router-middleware": "^0.6.0",
-    "sequelize": "^4.37.5",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^4.0.0"
   },
   "devDependencies": {
