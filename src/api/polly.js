@@ -14,8 +14,26 @@ export default ({ config }) => {
 
   var polly = new AWS.Polly();
 
+  api.get("/", async (req, res) => {
+    var voice = req.query.voice ? req.query.voice.toLowerCase() : null;
+    var params = {
+      OutputFormat: "mp3",
+      Text: req.query.text,
+      TextType: "text",
+      VoiceId: voices[voice] || "Joanna",
+    };
+
+    polly.synthesizeSpeech(params, function(err, data) {
+      if (err) {
+        console.log(err);
+      } else {
+        res.set("Content-Type", "audio/mp3");
+        res.send(data.AudioStream);
+      }
+    });
+  });
+
   api.post("/", async (req, res) => {
-    console.log(req.body);
     var voice = req.body.voice ? req.body.voice.toLowerCase() : null;
     var params = {
       OutputFormat: "mp3",
@@ -23,7 +41,6 @@ export default ({ config }) => {
       TextType: "text",
       VoiceId: voices[voice] || "Joanna",
     };
-    const range = req.headers.range;
 
     polly.synthesizeSpeech(params, function(err, data) {
       if (err) {

@@ -36,22 +36,20 @@ exports.default = function (_ref) {
 
   var polly = new AWS.Polly();
 
-  api.post("/", function () {
+  api.get("/", function () {
     var _ref2 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(req, res) {
-      var voice, params, range;
+      var voice, params;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              console.log(req.body);
-              voice = req.body.voice ? req.body.voice.toLowerCase() : null;
+              voice = req.query.voice ? req.query.voice.toLowerCase() : null;
               params = {
                 OutputFormat: "mp3",
-                Text: req.body.text,
+                Text: req.query.text,
                 TextType: "text",
                 VoiceId: voices[voice] || "Joanna"
               };
-              range = req.headers.range;
 
 
               polly.synthesizeSpeech(params, function (err, data) {
@@ -63,7 +61,7 @@ exports.default = function (_ref) {
                 }
               });
 
-            case 5:
+            case 3:
             case "end":
               return _context.stop();
           }
@@ -73,6 +71,44 @@ exports.default = function (_ref) {
 
     return function (_x, _x2) {
       return _ref2.apply(this, arguments);
+    };
+  }());
+
+  api.post("/", function () {
+    var _ref3 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee2(req, res) {
+      var voice, params;
+      return _regenerator2.default.wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              voice = req.body.voice ? req.body.voice.toLowerCase() : null;
+              params = {
+                OutputFormat: "mp3",
+                Text: req.body.text,
+                TextType: "text",
+                VoiceId: voices[voice] || "Joanna"
+              };
+
+
+              polly.synthesizeSpeech(params, function (err, data) {
+                if (err) {
+                  console.log(err);
+                } else {
+                  res.set("Content-Type", "audio/mp3");
+                  res.send(data.AudioStream);
+                }
+              });
+
+            case 3:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2, undefined);
+    }));
+
+    return function (_x3, _x4) {
+      return _ref3.apply(this, arguments);
     };
   }());
 
