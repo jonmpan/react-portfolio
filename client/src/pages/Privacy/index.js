@@ -16,7 +16,8 @@ class Privacy extends Component {
 
         <p>
           jonmpan ("us", "we", or "our") operates the https://www.jonmpan.com/
-          website and the jonmpan mobile application (the "Service").
+          website and any apps/skills/actions/capsules on any platform (the
+          "Service").
         </p>
 
         <p>
