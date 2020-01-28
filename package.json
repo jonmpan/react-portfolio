@@ -30,7 +30,7 @@
   "homepage": "https://www.jonmpan.com/",
   "dependencies": {
     "aws-sdk": "^2.558.0",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "babel-runtime": "^6.26.0",
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
@@ -39,13 +39,13 @@
     "express-session": "^1.15.6",
     "heroku-ssl-redirect": "0.0.4",
     "indefinite": "^2.2.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "morgan": "^1.8.0",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
-    "pokedex-promise-v2": "^3.1.1",
+    "pokedex-promise-v2": "^3.2.0",
     "resource-router-middleware": "^0.6.0",
-    "sequelize": "^4.37.5",
+    "sequelize": "^4.44.3",
     "sequelize-cli": "^4.0.0"
   },
   "devDependencies": {

@@ -5,6 +5,7 @@ import Home from "./pages/Home/";
 // import Footer from './components/Footer';
 import Privacy from "./pages/Privacy";
 import Secret from "./pages/Secret";
+import Skits from "./pages/SkitBuilder";
 
 class App extends Component {
   state = {};
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/secret" component={Secret} />
             <Route exact path="/privacy" component={Privacy} />
+            <Route exact path="/skits" component={Skits} />
           </Switch>
         </div>
       </Router>
