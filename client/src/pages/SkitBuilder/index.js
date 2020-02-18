@@ -297,14 +297,20 @@ class Privacy extends Component {
     const { state } = this;
     return (
       <div className="skitContainer">
-        <h3>Skits for Joke Generator</h3>
+        <h3>Importable Stories for Story Builder</h3>
         <p>
-          Joke Generator is a Bixby capsule where you can create jokes for Bixby
-          to read. You can use different voices and approximately 11 minutes of
-          dialog.
+          Build a story with Bixby! Use Bixby's different voices to tell your
+          joke, skit, story, or whatever you'd like!
+        </p>
+        <p>If you're in the capsule, just say "Import"</p>
+        <p>
+          If you're not in the capsule, just say "Import with Story Builder"
+        </p>
+        <p>
+          Copy and paste one of the following skits into the box, and click
+          "Go".
         </p>
         {this.returnSkits(state.skits)}
-        <div className="divider" />
       </div>
     );
   }

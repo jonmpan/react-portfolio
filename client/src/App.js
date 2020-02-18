@@ -23,6 +23,7 @@ class App extends Component {
             <Route exact path="/secret" component={Secret} />
             <Route exact path="/privacy" component={Privacy} />
             <Route exact path="/skits" component={Skits} />
+            <Route exact path="/stories" component={Skits} />
           </Switch>
         </div>
       </Router>
